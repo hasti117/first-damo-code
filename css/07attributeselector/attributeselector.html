@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selectors</title>
+    <style>
+        a[title] {
+            border: 2px solid rgb(8, 144, 46);
+        }
+
+        a[href="https://www.tops-int.com"] {
+            font-weight: bolder;
+        }
+
+        a[href*="example"] {
+            font-size: 3em;
+        }
+
+        a[href$=".in"] {
+            font-style: italic;
+            background: linear-gradient(rgb(255, 77, 0), white, green);
+        }
+
+        a[class~="logo"] {
+            padding: 2px;
+            font-size: 36px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <a href="">click here</a><br>
+    <a href="">This is Link</a><br>
+    <a href="https://www.tops-int.com">website title</a><br>
+    <a accesskey="h" title="alt+h" href="https://www.google.com">Google</a><br>
+    <a href="https://www.home.com">Home</a><br>
+    <a href="example">About</a><br>
+    <a href="https://www.example.com">contact</a><br>
+    <a href="https://www.aa.in">india</a><br>
+    <a href="https://www.inexample.com">contact</a><br>
+    <a class="logo" href="#">MySite</a><br>
+</body>
+
+</html>
