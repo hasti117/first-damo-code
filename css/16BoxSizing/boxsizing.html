@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            div{
+                border: 1px solid;
+            }
+            .flex{
+                display: flex;
+            }
+            .cotnainer{
+                width: 1000px;
+                margin: 0 auto;
+            }
+            div[class*="box"]{
+                height: 250px;
+                width: 250px;
+            }
+            img{
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+            }
+            .box-1{ background-color: rgb(97, 7, 93); padding: 40px; }
+            .box-2{ background-color: rgb(91, 19, 132); padding:80px ; }
+            .box-3{ background-color: rgb(109, 92, 8); padding:90px ; }
+            .box-4{ background-color: rgb(10, 64, 125); padding: 150px; }
+        </style>
+    </head>
+    <body>
+        <img src="../../rose.jfif" alt="">
+        <div class="cotnainer">
+            <div class="flex">
+                <div class="box-1">Test</div>
+                <div class="box-2">Test</div>
+                <div class="box-3">Test</div>
+                <div class="box-4">Test</div>
+            </div>
+        </div>
+    </body>
+    </html>
+</head>
+<body>
+    
+</body>
+</html>
