@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+
+        .display-flex {
+            display: flex;
+        }
+
+        .flex-direction-column {
+            flex-direction: column;
+        }
+
+        .flex-direction-column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .flex-direction-row {
+            flex-direction: row;
+        }
+
+        .flex-direction-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .test-33 {
+            width: 33.33%;
+        }
+
+        .flex-flow {
+            flex-flow: column wrap;
+        }
+
+        .justify-content-start {
+            height: 100px;
+            justify-content: flex-start;
+        }
+
+        .justify-content-end {
+            height: 100px;
+            justify-content: flex-end;
+        }
+
+        .justify-content-center {
+            height: 100px;
+            justify-content: center;
+        }
+
+        .justify-content-space-around {
+            height: 100px;
+            justify-content: space-around;
+        }
+
+        .justify-content-space-between {
+            height: 100px;
+            justify-content: space-between;
+        }
+
+        .justify-content-space-evenly {
+            height: 100px;
+            justify-content: space-evenly;
+        }
+        .ml-a{
+            margin-left: auto;
+        }
+        .test{
+            height: 40px;
+        }
+        .gap div{
+            width: 50%;
+        }
+        .gap{
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 100px;
+        }
+        .grow div{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="display-flex">
+        <h2>Display flex</h2>
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+    <h2>flex-direction-column</h2>
+    <div class="display-flex flex-direction-column">
+        <div class="test">test1</div>
+        <div class="test">test2</div>
+        <div class="test">test3</div>
+    </div>
+    <h2>flex-direction-column-reverse</h2>
+    <div class="display-flex flex-direction-column-reverse">
+        <div class="test">test1</div>
+        <div class="test">test2</div>
+        <div class="test">test3</div>
+    </div>
+    <h2>flex-direction-row</h2>
+    <div class="display-flex flex-direction-row">
+        <div class="test">test2</div>
+        <div class="test">test1</div>
+        <div class="test">test3</div>
+    </div>
+    <h2>flex-direction-row-reverse</h2>
+    <div class="display-flex flex-direction-row-reverse">
+        <div class="test">test1</div>
+        <div class="test">test2</div>
+        <div class="test">test3</div>
+    </div>
+    <h2>without-wrap</h2>
+    <div class="display-flex">
+        <div class="test-33">test 1</div>
+        <div class="test-33">test 2</div>
+        <div class="test-33">test 3</div>
+        <div class="test-33">test 4</div>
+    </div>
+    <h2>flex-wrap</h2>
+    <div class="display-flex flex-wrap">
+        <div class="test-33">test 1</div>
+        <div class="test-33">test 2</div>
+        <div class="test-33">test 3</div>
+        <div class="test-33">test 4</div>
+    </div>
+    <h2>flex-wrap-reverse</h2>
+    <div class="display-flex flex-wrap-reverse">
+        <div class="test-33">test 1</div>
+        <div class="test-33">test 2</div>
+        <div class="test-33">test 3</div>
+        <div class="test-33">test 4</div>
+    </div>
+    <h2>flex-flow: column wrap;</h2>
+    <div class="display-flex flex-flow">
+        <div class="test-33">test 1</div>
+        <div class="test-33">test 2</div>
+        <div class="test-33">test 3</div>
+        <div class="test-33">test 4</div>
+    </div>
+    <h2>justify-content-start</h2>
+    <div class="display-flex justify-content-start">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+    <h2>justify-content-end</h2>
+    <div class="display-flex justify-content-end">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+    <div class="display-flex">
+        <div class="test">test 1</div>
+        <div class="test ml-a">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+    <h2>justify-content-center</h2>
+    <div class="display-flex justify-content-center">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+    <h2>justify-content-space-ar</h2>
+    <div class="display-flex justify-content-space-around">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+    <h2>justify-content-space-bt</h2>
+    <div class="display-flex justify-content-space-between">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+    <h2>justify-content-space-ev</h2>
+    <div class="display-flex justify-content-space-evenly">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+    <h2>gap</h2>
+    <div class="display-flex gap">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+        <div class="test">test 4</div>
+        <div class="test">test 5</div>
+    </div>
+    <h2>grow</h2>
+    <div class="display-flex grow">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+        <div class="test">test 4</div>
+        <div class="test">test 5</div>
+    </div>
+    <h2>grow</h2>
+    <div class="display-flex grow">
+        <div class="test">test 1</div>
+        <div class="test">test 2</div>
+        <div class="test">test 3</div>
+    </div>
+</body>
+
+</html>
