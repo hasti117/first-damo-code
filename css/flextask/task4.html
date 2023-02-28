@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .deafult_setup{
+  background: gray;
+  border-top: 1px solid black;
+  background-color: #FEFFEC;
+}
+
+.deafult_setup > h1 {
+  padding: 8px 8px 0px;
+}
+
+.deafult_setup > p {
+  padding: 0px 8px 0px;
+}
+
+.container {
+  display: flex;
+  height: 300px;
+}
+
+.container > div {
+/*   border: 1px solid black; */
+  border-radius: 8px;
+  padding: 8px;
+  color: white;
+  background: green;
+  width: 100px;
+}
+
+.container > div:nth-child(1) {
+  flex-grow: 6;
+  margin-right: 10px;
+    background: blue;
+}
+
+.container > div:nth-child(3) {
+  flex-grow: 2;
+    margin-left: 10px;
+      background: pink;
+}
+
+    </style>
+</head>
+<body>
+    <div class="deafult_setup">
+        <h1>Default Setup</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="container">
+        <div>first card
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, labore! Architecto maxime ducimus, ipsa vero mollitia quis beatae expedita quod odio? A nostrum quas dolorum placeat facilis cumque ratione ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, debitis nobis? Beatae, rem dignissimos unde dolorem, esse hic reiciendis quam nostrum exercitationem odio aliquam corporis totam ipsa voluptates itaque repellat?</p>
+        </div>
+        <div>second card
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsam minima optio ratione voluptatibus necessitatibus quod, officia vel dolor architecto.</p>
+        </div>
+        <div>thrid card
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste at iure dignissimos quis, dolor accusantium porro aliquid eum laboriosam perferendis minima maxime dolore tenetur saepe facilis modi quibusdam doloribus ducimus.</p>
+        </div>
+      </div>
+      </div>
+      
+</body>
+</html>
