@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example{
+            display: flex;
+            width: 1000px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .col{
+            width: 25%;
+        }
+        img{
+            width: 100%;
+        }
+        .imgblur{filter: blur(5px);}
+        .brightness{filter: brightness(0.4);}
+        .contrast{filter: contrast(200%);}
+        .shadow{filter: drop-shadow(16px 16px 20px blue);}
+        .grayscale{filter: grayscale(50%);}
+    </style>
+
+</head>
+<body>
+    <div class="example">
+        <div class="col"><img class="grayscale"  src="../css/20display/grid/img/nature5.jfif" alt=""></div>
+        <div class="col"><img  class="contrast" src="../css/20display/grid/img/nature3.jfif" alt=""></div>
+        <div class="col"><img class="shadow"  src="../css/20display/grid/img/nature4.jfif" alt=""></div>
+        <div class="col"><img class="imgblur" src="../css/20display/grid/img/nature1.jfif" alt=""></div>
+        <div class="col"><img class="brightness"  src="../css/20display/grid/img/nature2.jfif" alt=""></div>
+    </div>
+</body>
+</html>
