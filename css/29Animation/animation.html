@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid;
+      }
+      .container {
+        width: 1100px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .col {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .row {
+      display: flex;
+      margin-right: -15px;
+      margin-left: -15px;
+      overflow: hidden;
+    }
+      p {
+        text-align: justify;
+      }
+      .left {
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: ; */
+        animation-name: anything;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes anything {
+        from{ transform: translate(-1050px); }
+        to{ transform: translate(0px); }
+      }
+      .right {
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: ; */
+        animation-name: rightside;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes rightside {
+        from{ transform: translate(1250px); }
+        to{ transform: translate(0px); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col left">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium a ipsa adipisci consequatur. Ea, ipsum quod doloremque consequuntur laboriosam quisquam delectus, odit possimus aliquam nihil, sed totam. Sint quas blanditiis veniam reprehenderit deleniti ex rerum excepturi eveniet libero amet, in unde aliquam quia consequatur quidem tenetur facere delectus! Deleniti, pariatur!
+         </p>
+        </div>
+        <div class="col right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facilis sint dolorum repellat, iure esse animi quas aut ullam eveniet nostrum! Esse, veniam nisi saepe dolorem alias atque dicta quod velit quos illum deserunt fugiat quia doloremque beatae ducimus quae vel aliquam totam repellat commodi iure accusantium. Commodi, aperiam incidunt?     
+            </p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
