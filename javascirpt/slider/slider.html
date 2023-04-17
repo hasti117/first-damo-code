@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slideranimation{
+            animation: slideranim 3s linear;
+            position: relative;
+        }
+        @keyframes slideranim {
+            from{ right: 1000px; }
+            to{right: 0;}
+        }
+    </style>
+</head>
+
+<body>
+    <img class="slider-img" src="../slider/slider1.jfif" alt="">
+    <img class="slider-img" src="../slider/slider2.jfif" alt="">
+    <img class="slider-img" src="../slider/slider3.jfif" alt="">
+    <img class="slider-img" src="../slider/slider4.jfif" alt="">
+    <img class="slider-img" src="../slider/slider5.jfif" alt="">
+
+    <script>
+        SliderImgs = document.getElementsByClassName("slider-img")
+        console.log(SliderImgs);
+        counter = 0;
+        function Sldier(params) {
+            counter++
+            console.log(counter);
+            for (let index = 0; index < SliderImgs.length; index++) {
+                // const element = SliderImgs[index];
+                console.log(SliderImgs[index]);
+                SliderImgs[index].style.display = "none"
+            }
+            // if (count >= SliderImageData.length) {
+            //     count = 0
+            // }
+            SliderImgs[counter].style.display = "block"
+            // setInterval(Sldier, 3000);
+            setTimeout(Sldier,3000)
+
+            console.log("count",count);
+            console.log("element",SliderImgs[count]);
+            console.log("element",SliderImgs[count].classList);
+            SliderImgs[count].style.display ="block"
+            SliderImgs[count].classList.add("slideranimation")
+
+        }
+        Sldier()
+    </script>
+
+</body>
+
+</html>
