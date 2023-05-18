@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function convertarraytoobject(arr)
+    {
+      var obj ={};
+
+      for ( var i=0;i<arr.length;i++){
+        var key = arr[i];
+        if(obj[key]){
+          obj[key]++;
+        }
+        else{
+          obj[key]=1;
+        }
+      }
+      return obj;
+    }
+    var number = [1, 2,2,3];
+    var result =convertarraytoobject(number);
+     console.log(result)
+
+     var number = [9,9,9,99];
+    var result =convertarraytoobject(number);
+     console.log(result)
+
+     var number = [4,3,2,1];
+    var result =convertarraytoobject(number);
+     console.log(result)
+
+
+     
+
+     // // Example1 usage:
+// var array = [1, 2,2,3];
+// var occurrences = countOccurrences(array);
+
+// console.log(occurrences);
+// // Output: { 1: 1, 2: 2, 3: 1, }
+    </script>
+</body>
+</html>
