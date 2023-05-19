@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		#ex5 {
+			width: 100px;
+			height: 100px;
+			border-radius: 0px;
+			background-color:yellowgreen;
+		}
+	</style>
+</head>
+<body>
+	<p id="ex1">This is example text change.</p>
+    <button id="btn1">Change Text</button>
+
+
+	<p id="ex2">This is example HTML chnage.</p>
+    <button id="btn2">Change HTML</button>
+
+
+	<p>
+		<input type="text" id="ex3" value="This is example value change"/>
+	</p>
+    <button id="btn3">Change Value</button>
+
+
+	<p id="ex4" >This is a example Change Alignment</p>
+    <button id="btn4">Change Alignment</button>
+
+
+	<p>
+		<div id="ex5"></div>
+	</p>
+	<button id="btn5">Change Shape</button>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+	<script type="text/javascript">
+		$("#btn1").click(function() {
+			$("#ex1").text("Text is change");
+		});
+		$("#btn2").click(function() {
+			$("#ex2").html("<mark>HTML change</mark>");
+		});
+		$("#btn3").click(function() {
+			$("#ex3").val("value change");
+		});
+		$("#btn4").click(function() {
+			$("#ex4").attr("align", "right");
+		});
+		$("#btn5").click(function() {
+			$("#ex5").css("border-radius", "50px");
+		});
+	</script>
+</body>
+
+</html>

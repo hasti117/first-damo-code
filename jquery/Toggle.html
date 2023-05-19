@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="data"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quo itaque velit esse iste eos. Modi perspiciatis harum amet laboriosam. Cumque animi sit atque aliquid neque sequi incidunt laudantium praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At necessitatibus, inventore modi error cupiditate magni, debitis libero, nostrum ad temporibus consectetur unde exercitationem sed maxime laboriosam. Sunt perspiciatis repudiandae quod? </p>
+    <button id="btn-toggle">Toggle </button>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $("#btn-toggle").on("click",function () {
+            $("#data").toggleClass("color")
+           
+        })
+    </script>
+</body>
+</html>
