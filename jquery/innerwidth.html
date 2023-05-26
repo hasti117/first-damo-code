@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+  <style>
+div {
+width: 60px;
+padding: 10px;
+height: 50px;
+float: left;
+margin: 5px;
+background: gray;
+cursor: pointer;
+}
+.mod {
+background: red;
+cursor: default;
+}
+  </style>
+</head>
+<body>
+    
+    <div>box1</div>
+    <div>box2</div>
+    <div>box3</div>
+    <div>box4</div>
+    <div>box5</div>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+var modWidth = 50;
+$( "div" ).one( "click", function() {
+$( this ).innerWidth( modWidth ).addClass( "mod" );
+modWidth -= 5;
+});
+</script>
+ 
+</body>
+</html>
