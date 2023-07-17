@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cake</title>
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+  <style>
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: #f8f2e7;
+  box-sizing: border-box;
+}
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 100;
+  line-height: 20px;
+}
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Great Vibes',sans-serif;
+  color: #222222;
+  cursor: pointer;
+}
+.navbar-menu a{
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  display: inline-block;
+}
+.navbar-menu a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.8px;
+  background-color: #de6900;
+  transition:  .3s;
+}
+.navbar-menu a:hover::after{
+  width: 100%;
+}
+#home{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #222222;
+  padding: 0 100px;
+}
+.content1{
+  display: flex;
+  flex-direction: column;
+  padding-top: 170px;
+}
+.title h1{
+  font-size: 45px;
+  font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+.image{
+  background-image: url(./img/img1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 370px;
+  height: 270px;
+  transition: 1s;
+}
+.image:hover{
+  border-radius: 10px;
+  border-color: black;
+transform: scale(1.3);
+}
+.content2{
+  display: flex;
+  flex-direction: column;
+  padding-top: 170px;
+  padding-left: 20px;
+}
+.content2 .image{
+  background-image: url(./img/img2.jpg);
+}
+.title p{
+  margin-bottom: 0;
+  margin-top: 33px;
+  font-size: 14px;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+button{
+  padding: 14px 27px;
+  margin-top: 30px;
+  background-color: #de6900;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Raleway',sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+button:hover{
+  color: black;
+  border-radius: 4px;
+}
+.social-container{
+  position: absolute;
+  right: 55px;
+  bottom: 30%;
+}
+.social-icons{
+  list-style: none;
+  position: relative;
+}
+.social-icons li{
+  margin: 35px 0;
+}
+.social-icons li i{
+  color: #222222;
+  font-size: 20px;
+}
+.social-icons li a:hover i{
+  transform: scale(1.5);
+  color: #de6900;
+  transition: all .2s ease-in-out;
+}
+.social-icons::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 190px;
+  top: -210px;
+  left: 8px;
+  background-color: #de6900;
+}
+.social-icons::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 190px;
+  bottom: -210px;
+  left: 8px;
+  background-color: #de6900;
+}
+
+.product{
+   padding: 10px 8% 120px;
+}
+.main-txt{
+   text-align: center;
+}
+.main-txt h3{
+   font-size: 38px;
+   text-transform: uppercase;
+   color: black;
+   text-shadow: 0px 1px 1px black;
+}
+.card-content{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+   align-items: center;    
+   gap: 0.90rem;
+   margin-top: 30px;
+}
+.row img{
+   width: 100%;
+   display: block;
+   transition: 1s;
+}
+img:hover{
+  border-radius: 10px;
+  border-color: black;
+transform: scale(1.3);
+}
+img{
+  width: 100px;
+  height: 200px;
+}
+.card-body{
+   padding: 10px;
+}
+.card-body h3{
+   margin-top: 10px;
+   font-size: 30px;
+   font-weight: 550;
+   color:#de6900;
+   text-shadow: 0px 1px 1px black;
+}
+.card-body p{
+   font-weight: 500;
+   margin-top: 5px;
+   letter-spacing: 1px;
+}
+.card-body h5{
+   margin-top: 5px;
+   font-size: 18px;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="inner-width">
+      <a href="#" class="logo">Cake</a>
+      <div class="navbar-menu">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">gallery</a>
+        <a href="#">contact</a>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="content1">
+      <div class="title">
+        <h1>try our tasty cakes</h1>
+      </div>
+      <div class="image"></div>
+    </div>
+    <div class="content2">
+      <div class="image"></div>
+      <div class="title">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec lorem porta.</p>
+        <button>order</button>
+      </div>
+    </div>
+    <div class="social-container">
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </section>
+   <!-- Product Section Start -->
+   <section class="product" id="product">
+    <div class="main-txt">
+        <h3>New Products</h3>
+    </div>
+    <div class="card-content">
+        <div class="row">
+            <img src="./img/celebration cakes.jfif" alt="">
+            <div class="card-body">
+                <h3>celebration cakes</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./img/Fruit Cake.jfif" alt="">
+            <div class="card-body">
+                <h3>Fruit Cake</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./img/Small CupCake.jfif" alt="">
+            <div class="card-body">
+                <h3>Small CupCake</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./img/cheesecake.jfif" alt="">
+            <div class="card-body">
+                <h3>Cheesecake</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
